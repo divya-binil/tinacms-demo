@@ -11,6 +11,9 @@ importers:
       '@astrojs/check':
         specifier: ^0.9.4
         version: 0.9.4(typescript@5.6.3)
+      '@tinacms/auth':
+        specifier: ^1.0.8
+        version: 1.0.8
       astro:
         specifier: ^4.16.10
         version: 4.16.10(@types/node@22.9.0)(rollup@4.25.0)(typescript@5.6.3)
@@ -1705,6 +1708,9 @@ packages:
 
   '@tinacms/app@2.1.11':
     resolution: {integrity: sha512-iIsKnU7eeElyoOBQHrCCiqBDBtwxdRUlXHnoIuGlvOc1zFqeoPRQ+RigHDx1ugkTa0lK66U1GGh7MsQDfdLskg==}
+
+  '@tinacms/auth@1.0.8':
+    resolution: {integrity: sha512-o7OYuTSmcYHXsVK1rY30lujMNq5GaUklYI8sbboSWI/KI2PdnAgei0ZihTOlLYHD28gHwHu8WKxeXo5olwj4Mg==}
 
   '@tinacms/cli@1.6.11':
     resolution: {integrity: sha512-0ADXkVbsblyiQ7U28HvRBVro1Edxr20WGOFMJgA+xA7U044DQWevCE8DmpbHISccqprrqQXIDR7e3hiAXgImag==}
@@ -7775,6 +7781,12 @@ snapshots:
       - sucrase
       - supports-color
       - yup
+
+  '@tinacms/auth@1.0.8':
+    dependencies:
+      fetch-ponyfill: 7.1.0
+    transitivePeerDependencies:
+      - encoding
 
   '@tinacms/cli@1.6.11(@codemirror/language@6.0.0)(@types/node@22.9.0)(@types/react@18.3.12)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.25.0)(scheduler@0.23.2)(sucrase@3.35.0)':
     dependencies:

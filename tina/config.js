@@ -12,6 +12,11 @@ export default defineConfig({
 
   // Get this from tina.io
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
+  admin: {
+    auth: {
+      useLocalAuth: process.env.TINA_PUBLIC_IS_LOCAL === 'true',
+    },
+  },
   // Get this from tina.io
   token: process.env.TINA_TOKEN,
 
